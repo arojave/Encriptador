@@ -44,6 +44,7 @@ function encriptar() {
     var texto = document.getElementById("resultado").value;
     navigator.clipboard.writeText(texto).then(function() {
         console.log('Copiado al portapapeles: ' + texto);
+        window.alert("Copiado");
     }, function(err) {
         console.error('Error al copiar al portapapeles: ', err);
     });
